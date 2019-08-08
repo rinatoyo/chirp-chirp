@@ -44,7 +44,6 @@ function countLetters(counter, sample_text) {
   if (counter.hasOwnProperty(toLower)) {
     counter[toLower]++;
   }
-  console.log(sample_text);
   countLetters(counter, sample_text.substr(1));
   return counter;
 }
